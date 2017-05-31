@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Movie App</title>
+
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/materialize.css">
+
+</head>
+<body>
+
+	<h1 class="center orange-text">Movie App</h1>
+	<h5 class="center grey-text">Cadastre um filme, série, ou anime.</h5>
+	
+	<div class="row">
+		<div class="input-field col s4 offset-s4">
+			
+			<span class="message-error">The input can't be empty</span>
+
+			<input placeholder="Informe o nome" class="movie-name" type="text" class="validate">
+
+			<div class="input-field ">
+				<textarea placeholder="Descrição sobre o filme" class="movie-description-area materialize-textarea"></textarea>
+			</div>
+
+			<a class="waves-effect waves-light btn" id="movie-add">Adicionar</a>
+		</div>
+	</div>
+
+	<hr>
+	<br><br>
+
+	<h5 class="center green-text">Adicionados recentemente</h5>
+	<br><br>
+
+	<div class="row movie-list">
+		<div class="col s3 m3">
+			<div class="card">
+				<div class="card-image"><img src="assets/images/movies/sample-1.jpg"></div>
+				<div class="card-content">
+					<span class="card-title movie-title"></span>
+					<p class="movie-description"></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+	<script src="assets/js/movie-app.js"></script>
+	<script src="assets/js/materialize.js"></script>
+	<script src="assets/js/materialize.js"></script>
+
+</body>
+</html>
+
+
+
+
