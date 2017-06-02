@@ -1,11 +1,13 @@
+var formMovie = document.querySelector("#form-movie");
+
 var movieName = document.querySelector(".movie-name");
+var movieDescriptionArea = document.querySelector (".movie-description-area")
 
 var movieAdd = document.querySelector("#movie-add");
 
 var movieTitle = document.querySelector(".movie-title");
 var movieDescription = document.querySelector(".movie-description");
 
-var movieDescriptionArea = document.querySelector (".movie-description-area")
 
 var messageError = document.querySelector(".message-error");
 
@@ -16,6 +18,8 @@ var tableMovie = document.querySelector("#table-movie");
 movieAdd.addEventListener("click", function(){
 	validateNameMovie();
 });
+
+
 
 
 // Validate Movie
@@ -44,12 +48,29 @@ function saveMovie(){
 
 
 // Create Template
-function createTemplate(){
-	var newCard = document.createElement('div');
-	newCard.className = "card";
-	newCard.textContent = movieTitle.textContent;
-	document.body.appendChild(newCard);
+// function createTemplate(){
+// 	var newCard = document.createElement('div');
+// 	newCard.className = "card";
+// 	newCard.textContent = movieTitle.textContent;
+// 	document.body.appendChild(newCard);
+// }
+
+
+function getFormData(){
+	movieTitle = formMovie.nome.value;	
+	movieDescription = formMovie.descricao.value;	
+
+	console.log(movieTitle);
+	console.log(movieDescription);
 }
+
+var Movie = {
+	name : formMovie.nome.value,
+	// description :
+}
+
+
+
 
 
 
