@@ -2,62 +2,40 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Movie App</title>
+	<title>TV Séries</title>
 
 	<link rel="stylesheet" href="assets/css/style.css">
-	<link rel="stylesheet" href="assets/css/materialize.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.2/css/bulma.css">
 
 </head>
 <body>
 
-	<h1 class="center orange-text">Movie App</h1>
-	<h5 class="center grey-text">Cadastre um filme, série, ou anime.</h5>
-	
-	<div class="row">
-		<div class="input-field col s4 offset-s4">
-			<form id="form-movie">
-				<span class="message-error">The input can't be empty</span>
-
-				<input placeholder="Informe o nome" name="nome" class="movie-name" type="text" class="validate">
-
-				<div class="input-field ">
-					<textarea placeholder="Descrição sobre o filme" name="descricao" class="movie-description-area materialize-textarea"></textarea>
-				</div>
-
-				<a class="waves-effect waves-light btn" id="movie-add">Adicionar</a>
-			</form>
-		</div>
+	<div class="column is-half is-offset-one-quarter">
+		<h1 class="">TV Séries </h1>
+		<h5 class="">Cadastre sua série, filme ou anime favorito.</h5>
 	</div>
 
-	<hr>
-	<br><br>
-
-	<h5 class="center green-text">Adicionados recentemente</h5>
-	<br><br>
-
-	<div class="row movie-list">
 
 
+	<div class="column is-half is-offset-one-quarter">		
+		<form id="formulario-filme">
+			<span class="message-error">O campo não pode ser vazio</span>
+			<div class="field">
+				<label class="label">Nome</label>
+				<p class="control">
+					<input class="input nome-do-filme" type="text" placeholder="Informe o nome">
+				</p>
+			</div>		
 
-
-	</div>	
-
-<!-- 	<div class="row movie-list">
-		<div class="col s3 m3">
-			<div class="card">
-				<div class="card-image"><img src="assets/images/movies/sample-1.jpg"></div>
-				<div class="card-content">
-					<span class="card-title movie-title"></span>
-					<p class="movie-description"></p>
-				</div>
+			<div class="block">
+				<a class="button is-success adicionar-filme" >Adicionar</a>
 			</div>
-		</div>
-	</div>
--->
 
-<script src="assets/js/movie-app.js"></script>
-<script src="assets/js/materialize.js"></script>
-<script src="assets/js/materialize.js"></script>
+		</form>
+	</div>
+
+
+	<script src="assets/js/app.js"></script>
 
 </body>
 </html>
