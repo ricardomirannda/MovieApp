@@ -2,3 +2,8 @@
 	color: red;
 	display: none;
 }
+
+
+.lista-filmes-series-animes{
+	flex-wrap: wrap;
+}
