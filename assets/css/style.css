@@ -1,9 +1,78 @@
-.message-error{
+.lista-de-tarefas{
+	margin:50px auto;
+	width: 48%;
+}
+
+
+.lista-de-tarefas  li {
+	display: flex; 
+	flex-basis: 50%;
+}
+
+.lista-de-tarefas  input {
+	margin-top: 7px;
+	margin-right: 10px;  
+}
+
+
+
+.mensagem-de-erro{
 	color: red;
 	display: none;
 }
 
 
-.lista-filmes-series-animes{
-	flex-wrap: wrap;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.geral{
+	display: flex;
+	height: 90vh;
+	position: relative;
+	overflow: hidden;
 }
+
+
+.geral .menu{
+	border:solid 1px red;
+	width: 20%;
+}
+
+
+.geral .conteudo {
+	border:solid 1px blue;
+	margin-left: 10px;
+	width: 80%;
+	position: relative;
+}
+
+
+.modal{
+	background-color: rgba(0,0,0,0.4);
+	height: 100%;
+	width: 100%; 
+	z-index: 1;
+	position: absolute;
+}
+
+
+.modal h1 {
+	margin: 50%;	
+}*/

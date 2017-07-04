@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
 	<meta charset="UTF-8">
-	<title>TV Séries</title>
+	<title>Todoit</title>
 
 	<link rel="stylesheet" href="assets/css/style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.2/css/bulma.css">
@@ -11,55 +11,33 @@
 <body>
 
 	<div class="column is-half is-offset-one-quarter">
-		<h1 class="">TV Séries </h1>
-		<h5 class="">Cadastre sua série, filme ou anime favorito.</h5>
+		<h1 class="title">Lista de Tarefas</h1>
+		<h5 class="subtitle">Aplicativo para gerenciamento de atividades.</h5>
 	</div>
 
 
 	<!-- Formulario -->
 	<div class="column is-half is-offset-one-quarter">		
 		<form id="formulario-filme">
-			<span class="message-error">O campo não pode ser vazio</span>
+			<span class="mensagem-de-erro">O campo não pode ser vazio</span>
 			<div class="field">
 				<label class="label">Nome</label>
 				<p class="control">
-					<input class="input nome-do-filme" type="text" placeholder="Informe o nome">
+					<input class="input nome-tarefa" type="text" placeholder="Informe a atividade">
 				</p>
 			</div>		
 
 			<div class="block">
-				<a class="button is-success adicionar-filme" >Adicionar</a>
+				<a class="button is-success adicionar-tarefa">Adicionar</a>
 			</div>
 
 		</form>
 	</div>
 
 	<!-- Séries, filmes ou animes adicionados  -->
-	<div class="columns lista-filmes-series-animes">	
 
-	</div>
-
-
-<!-- 
-	<div class="columns lista-filmes-series-animes">	
-		<div class="column is-one-quarter">
-			<div class="card">
-				<div class="card-image">
-					<figure class="image is-308x200">
-						<img src="http://via.placeholder.com/308x200" alt="Image">
-					</figure>
-				</div>
-				<div class="card-content">
-					<div class="media">
-						<div class="media-content">
-							<p class="title is-4 titulo"> </p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
--->
+	<ul class="lista-de-tarefas">
+	</ul>
 
 
 	<script src="assets/js/app.js"></script>
